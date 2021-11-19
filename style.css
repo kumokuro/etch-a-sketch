@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  flex-wrap: wrap;
+}
+
+.gridSquare {
+  height: 50px;
+  width: 50px;
+}
+
+.colored-in {
+  background-color: rgb(63, 108, 148);
+}
