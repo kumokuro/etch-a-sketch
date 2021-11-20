@@ -1,17 +1,35 @@
 const container = document.querySelector("#container");
 
-// creating 16 divs for the grid
-for (i = 0; i < 16; i++) {
-  const board = document.createElement("div");
-  board.classList.add("gridSquare");
-  board.style.cssText = "border-style: solid; border-color: black";
-  container.appendChild(board);
+createGrid();
+addColor();
+
+function createGrid() {
+  // creates 16 divs for the grid
+  for (i = 0; i < 16; i++) {
+    const grid = document.createElement("div");
+    grid.classList.add("gridSquare");
+    container.appendChild(grid);
+  }
 }
 
-// adding class colored-in when square is hovered over
-const squares = document.querySelectorAll(".gridSquare");
-squares.forEach((square) => {
-  square.addEventListener("mouseenter", () => {
-    square.classList.add("colored-in");
+// adds class colored-in when square is hovered over
+function addColor() {
+  const squares = document.querySelectorAll(".gridSquare");
+  squares.forEach((square) => {
+    square.addEventListener("mouseenter", () => {
+      square.classList.add("colored-in");
+    });
   });
-});
+}
+
+// clears grid off
+const resetBtn = document.querySelector("#reset");
+resetBtn.addEventListener("click", reset);
+
+function reset() {
+  while (container.firstChild) {
+    container.removeChild(container.lastChild);
+  }
+  createGrid();
+  addColor();
+}
