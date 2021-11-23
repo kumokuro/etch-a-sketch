@@ -4,7 +4,8 @@ This project took about 8 hours total to complete.
 
 The goals of this project were to create a grid, who's size can be adjusted based on user input. When each grid square is hovered over, a color is added, thus creating an etch-a-sketch board. The user can reset the board using the reset button located at the top. 
 
-#How it works and what I learned 
+##How it works and what I learned 
+
 The main purpose of this project was to gain more practice with DOM manipulation. I also learned about CSS grid and gained a deeper insight into function callbacks.
 
 To gain input from the user, I implemented a range slider, then held its value in a variable (gridSize) to use as a parameter for the function that would build the grid, createGrid(). In order to make sure the value would be updated after every use, I used a function that:
@@ -18,6 +19,6 @@ To add the color to each square touched, I read about events, and found that mou
 
 The reset button works by removing all the children of container, then reinstating them by calling createGrid(). 
 
-#End of project thoughts
+##End of project thoughts
 
 I believe that there is a lot of cleaning up I can do in the future! But I am very excited to have the project working as intended. In the future I would like to add color options. 
