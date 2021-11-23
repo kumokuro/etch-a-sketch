@@ -1,5 +1,7 @@
 # etch-a-sketch
+
 Link: https://kumokuro.github.io/etch-a-sketch/
+
 A simple etch-a-sketch board made with HTML, CSS, and JavaScript. 
 This project took about 8 hours total to complete. 
 
