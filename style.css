@@ -17,8 +17,18 @@ h1 {
   display: flex;
   width: 500px;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   padding: 8px;
+}
+
+.left {
+  display: flex;
+  gap: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(97, 146, 189);
+  font-size: 18px;
 }
 
 button {
@@ -32,7 +42,6 @@ button {
 
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 500px;
   width: 500px;
   background-color: #ffffff;
