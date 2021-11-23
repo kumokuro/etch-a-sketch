@@ -1,10 +1,11 @@
 const container = document.querySelector("#container");
 
+// initiates the first grid
 createGrid();
 addColor();
 
+// creates 16 divs for the grid
 function createGrid() {
-  // creates 16 divs for the grid
   for (i = 0; i < 16; i++) {
     const grid = document.createElement("div");
     grid.classList.add("gridSquare");
